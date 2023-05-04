@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print a message
-        run:  echo "GIT_TAG = ${GITHUB_REF##refs/tags/}"
+        run:  echo "GIT_TAG = ${tags/}"
 
