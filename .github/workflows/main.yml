@@ -1,3 +1,11 @@
-- name: Get tag name
-  run: echo "Tag name: ${GITHUB_REF/refs\/tags\//}"
-  
+name: Print a message
+
+on: [push]
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a message
+        run: echo "Hello, world!"
+
